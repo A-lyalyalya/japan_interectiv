@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Romaji & Hiragana Flashcards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Подключаем внешний CSS файл -->
+</head>
+<body>
+  <main>
+    <!-- Карточка с цветком -->
+    <section class="page grid-layout">
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">hana</div>
+            <div class="hiragana">はな</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🌸</div>
+            <div class="translation">цветок</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Другие карточки идут ниже -->
+  </main>
+</body>
+</html>
