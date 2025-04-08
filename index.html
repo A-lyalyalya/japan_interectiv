@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Romaji & Hiragana Flashcards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Подключаем внешний CSS файл -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <!-- Карточки с переворотом -->
+    <section class="page grid-layout">
+      <!-- Карточка 1 -->
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">hana</div>
+            <div class="hiragana">はな</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🌸</div>
+            <div class="translation">цветок</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">gakkou</div>
+            <div class="hiragana">がっこう</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🏫</div>
+            <div class="translation">школа</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">kinou</div>
+            <div class="hiragana">きのう</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🕒</div>
+            <div class="translation">вчера</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">kaze</div>
+            <div class="hiragana">かぜ</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🍃</div>
+            <div class="translation">ветер</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">ame</div>
+            <div class="hiragana">あめ</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">☔</div>
+            <div class="translation">дождь</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Следующие карточки -->
+    <section class="page grid-layout">
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">kasa</div>
+            <div class="hiragana">かさ</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">☂️</div>
+            <div class="translation">зонт</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">kutsu</div>
+            <div class="hiragana">くつ</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">👟</div>
+            <div class="translation">обувь</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">kutsushita</div>
+            <div class="hiragana">くつした</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🧦</div>
+            <div class="translation">носки</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">isu</div>
+            <div class="hiragana">いす</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">🪑</div>
+            <div class="translation">стул</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="this.classList.toggle('flipped')">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="romaji">hon</div>
+            <div class="hiragana">ほん</div>
+          </div>
+          <div class="card-back">
+            <div class="emoji">📚</div>
+            <div class="translation">книга</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="position: fixed; bottom: 10px; width: 100%; text-align: center; font-family: 'Permanent Marker', cursive; font-size: 1.2em; color: #111;">GTO ONIZUKA APPROVED ✔️</footer>
+</body>
+</html>
+
