@@ -1,29 +1,72 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Romaji & Hiragana Flashcards</title>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"> <!-- Подключаем внешний CSS файл -->
-</head>
-<body>
-  <main>
-    <!-- Карточка с цветком -->
-    <section class="page grid-layout">
-      <div class="card" onclick="this.classList.toggle('flipped')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="romaji">hana</div>
-            <div class="hiragana">はな</div>
-          </div>
-          <div class="card-back">
-            <div class="emoji">🌸</div>
-            <div class="translation">цветок</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Другие карточки идут ниже -->
-  </main>
-</body>
-</html>
+body {
+  background: #f0f8ff;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 карточек в строке */
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.card {
+  width: 150px;
+  height: 140px;
+  perspective: 1000px; /* Для создания 3D эффекта при вращении */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s; /* Плавный переход */
+  transform-style: preserve-3d; /* Сохраняем 3D эффект */
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg); /* Поворачиваем карточку на 180 градусов */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Скрываем заднюю сторону */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-front {
+  background: #c7e4ff;
+}
+
+.card-back {
+  background: #f9e3d3; /* Цвет фона задней стороны */
+  transform: rotateY(180deg); /* Поворачиваем заднюю сторону */
+}
+
+.romaji, .hiragana {
+  font-size: 1.2em;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 600;
+  color: #003366;
+}
+
+.translation {
+  font-size: 1em;
+  color: #444;
+}
+
+.emoji {
+  font-size: 2em;
+  margin-top: 10px;
+}
